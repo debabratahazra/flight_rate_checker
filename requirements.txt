@@ -1,0 +1,17 @@
+# Minimum versions (>=) so pip can resolve wheels compatible with the
+# installed Python (the old exact pins failed to build on Python 3.13/3.14).
+selenium>=4.27.0
+webdriver-manager>=4.0.2
+requests>=2.32.0
+beautifulsoup4>=4.12.3
+openai>=1.55.0
+google-generativeai>=0.8.0
+pandas>=2.2.3
+rich>=13.9.0
+python-dotenv>=1.0.1
+undetected-chromedriver>=3.5.5
+fake-useragent>=1.5.1
+lxml>=5.3.0
+# Python 3.12+ removed the stdlib `distutils`; setuptools restores the shim
+# that undetected-chromedriver still imports.
+setuptools>=70.0.0
